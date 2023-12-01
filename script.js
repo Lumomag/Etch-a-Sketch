@@ -1,15 +1,19 @@
-const container = document.querySelector('.container');
-
 document.addEventListener('DOMContentLoaded', function(){
   createGrid();
 
+  const cells = document.querySelectorAll('.container div');
 
+  cells.forEach(cell => {
+    cell.addEventListener('mouseover', () => {
+        cell.style.backgroundColor = '#000';
+    });
+});
 
 
   function createGrid() {
     const container = document.querySelector('.container');
     for(let i = 0; i < 256; i++){
-      const cells = document.createElement('div');
+      const cell = document.createElement('div');
       container.appendChild(cell);
     }
   }
