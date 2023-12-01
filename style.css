@@ -2,10 +2,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  width: 500px;
-  height: 500px;
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 6.25%;
+  margin-top: 60px;
+  width: 530px;
+  height: 530px;
   border: 1px solid #000000;
 }
